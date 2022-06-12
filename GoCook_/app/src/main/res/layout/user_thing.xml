@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="left">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left">
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/recipe_btn_back"
+                android:layout_width="31dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/navigation">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumgothicextrabold"
+                android:text="               GoCook"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line"></ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/nanumgothic"
+                android:text="면 양"
+                android:textColor="#707070"
+                android:textSize="45px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/nanumgothic"
+                android:text="80g"
+                android:textColor="#9b111e"
+                android:textSize="30px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/nanumgothic"
+                android:text="160g"
+                android:textColor="#9b111e"
+                android:textSize="30px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/nanumgothic"
+                android:text="240g"
+                android:textColor="#9b111e"
+                android:textSize="30px"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/user_noodleweight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/nanumgothic"
+                android:text="80g"
+                android:textColor="#707070"
+                android:textSize="45px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/noodleWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/nanumgothic"
+                android:text="0g"
+                android:textColor="#707070"
+                android:textSize="45px"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/noodle_one"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_round"
+                android:fontFamily="@font/nanumgothic"
+                android:text=" 1인 "
+                android:textStyle="bold">
+
+            </Button>
+
+            <Button
+                android:id="@+id/noodle_two"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_round"
+                android:fontFamily="@font/nanumgothic"
+                android:text=" 2인 "
+                android:textStyle="bold">
+
+            </Button>
+
+            <Button
+                android:id="@+id/noodle_three"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_round"
+                android:fontFamily="@font/nanumgothic"
+                android:text=" 3인 "
+                android:textStyle="bold">
+
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+            <ImageView
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/line"></ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/nanumgothic"
+                android:text="소스 양"
+                android:textColor="#707070"
+                android:textSize="45px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/nanumgothic"
+                android:text="150g X 인"
+                android:textColor="#9b111e"
+                android:textSize="30px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="52dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/nanumgothic"
+                android:text="기본 + 30%"
+                android:textColor="#9b111e"
+                android:textSize="30px"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/user_sauceweight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/nanumgothic"
+                android:text="150g"
+                android:textColor="#707070"
+                android:textSize="45px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/souceWight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/nanumgothic"
+                android:text="0g"
+                android:textColor="#707070"
+                android:textSize="45px"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/sauce_one"
+                android:layout_width="67dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_round"
+                android:fontFamily="@font/nanumgothic"
+                android:text=" 기본 "
+                android:textStyle="bold"></Button>
+
+            <Button
+                android:id="@+id/sauce_two"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_round"
+                android:fontFamily="@font/nanumgothic"
+                android:text="많이"
+                android:textStyle="bold"></Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+            <ImageView
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/line"></ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:fontFamily="@font/nanumgothic"
+                    android:text="면 끓이는 시간 : "
+                    android:textColor="#707070"
+                    android:textSize="30px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/user_thing_nt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/nanumgothic"
+                    android:textColor="#707070"
+                    android:textSize="30px"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:fontFamily="@font/nanumgothic"
+                    android:text="요리 소요 시간 : "
+                    android:textColor="#707070"
+                    android:textSize="30px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/user_thing_ct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/nanumgothic"
+                    android:textColor="#707070"
+                    android:textSize="30px"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/line"></ImageView>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/nanumgothic"
+            android:text="재료 추가"
+            android:textColor="#707070"
+            android:textSize="45px"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/nanumgothic"
+            android:text=" 마늘 추가 [풍미] - 재료 1칸"
+            android:textColor="#707070"
+            android:textSize="45px"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="-5dp"
+            android:fontFamily="@font/nanumgothic"
+            android:text=" 페퍼론치노 추가 [매운맛] - 재료 2칸"
+            android:textColor="#707070"
+            android:textSize="45px"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="-5dp"
+            android:fontFamily="@font/nanumgothic"
+            android:text=" 파마산 치즈가루 [안 싱겁게] - 재료 3칸"
+            android:textColor="#707070"
+            android:textSize="45px"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnConnect"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_round"
+                android:fontFamily="@font/nanumgothic"
+                android:text="블루투스 연결"
+                android:textStyle="bold">
+
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/cooking_btn"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_round"
+                android:fontFamily="@font/nanumgothic"
+                android:text="요리하기"
+                android:textStyle="bold">
+
+            </Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
