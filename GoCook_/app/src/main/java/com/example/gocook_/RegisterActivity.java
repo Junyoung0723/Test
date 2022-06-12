@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -29,6 +30,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class RegisterActivity extends AppCompatActivity {
 
+    private ImageView mBtnBack;
     private FirebaseAuth mFirebaseAuth;                                         // 파이어베이스 인증
     private DatabaseReference mDatabaseRef;                                     // 실시간 데이터베이스
     private EditText mEtEmail, mEtPwd, mEtPwdck, mEtName, mEtPhonenb;           // 회원가입 입력필드
@@ -69,12 +71,19 @@ public class RegisterActivity extends AppCompatActivity {
         male = findViewById(R.id.rbtn_man);
         female = findViewById(R.id.rbtn_woman);
 
-        mBtnIdck = findViewById(R.id.btn_idck);
+
+        mBtnBack = findViewById(R.id.btn_back);
+        mBtnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(RegisterActivity.this, MemberLoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         mBtnIdck = findViewById(R.id.btn_idck);
-
         mBtnIdck.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View view) {
                 mDatabaseRef.child("userAccount").orderByChild("emailId").equalTo(mEtEmail.getText().toString()).addListenerForSingleValueEvent(new ValueEventListener() {

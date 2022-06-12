@@ -22,6 +22,7 @@
             </LinearLayout>
 
             <ImageView
+                android:id="@+id/recipe_btn_back"
                 android:layout_width="31dp"
                 android:layout_height="26dp"
                 android:layout_marginLeft="25dp"
